@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    function check(str) {
+        regexp = /^[_a-z0-9]{6,}$/;
+
+        if (regexp.test(str)) {
+            console.log('Account hợp lệ');
+        } else {
+            console.log('Account không hợp lệ');
+        }
+    }
+
+    check('123abc_');
+    check('_123abc');
+    check('______');
+    check('123456');
+    check('.@');
+    check('1234_');
+    check('aabbcc');
+</script>
+</body>
+</html>

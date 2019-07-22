@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    function check(str) {
+        regexp = /^\([0-9]{2}\)\-\([0][0-9]{9}\)/;
+
+        if (regexp.test(str)) {
+            console.log('Tên lớp hợp lệ');
+        } else {
+            console.log('Tên lớp không hợp lệ');
+        }
+    }
+
+    check('(99)-(0922444555)');
+
+</script>
+</body>
+</html>
